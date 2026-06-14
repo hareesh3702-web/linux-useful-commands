@@ -175,7 +175,7 @@ Shows large trash files.
 ## 8. Error Logs
 
 ```bash
-find /home -type f -iname "*error_log" -size +50M 2>/dev/null
+find /home -type f -iname "*log" -size +100M -exec du -h {} \; 2>/dev/null
 ```
 
 Lists error logs larger than 50 MB.
